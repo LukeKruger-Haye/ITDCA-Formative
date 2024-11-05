@@ -1,0 +1,15 @@
+/home/yukitty/Documents/UNI/ITDCA_FA/ITDCA-Formative/Question 3/obj/Debug/net8.0/Question 3.GeneratedMSBuildEditorConfig.editorconfig
+/home/yukitty/Documents/UNI/ITDCA_FA/ITDCA-Formative/Question 3/obj/Debug/net8.0/Question 3.AssemblyInfoInputs.cache
+/home/yukitty/Documents/UNI/ITDCA_FA/ITDCA-Formative/Question 3/obj/Debug/net8.0/Question 3.AssemblyInfo.cs
+/home/yukitty/Documents/UNI/ITDCA_FA/ITDCA-Formative/Question 3/obj/Debug/net8.0/Question 3.csproj.CoreCompileInputs.cache
+/home/yukitty/Documents/UNI/ITDCA_FA/ITDCA-Formative/Question 3/obj/Debug/net8.0/Question 3.sourcelink.json
+/home/yukitty/Documents/UNI/ITDCA_FA/ITDCA-Formative/Question 3/bin/Debug/net8.0/Question 3
+/home/yukitty/Documents/UNI/ITDCA_FA/ITDCA-Formative/Question 3/bin/Debug/net8.0/Question 3.deps.json
+/home/yukitty/Documents/UNI/ITDCA_FA/ITDCA-Formative/Question 3/bin/Debug/net8.0/Question 3.runtimeconfig.json
+/home/yukitty/Documents/UNI/ITDCA_FA/ITDCA-Formative/Question 3/bin/Debug/net8.0/Question 3.dll
+/home/yukitty/Documents/UNI/ITDCA_FA/ITDCA-Formative/Question 3/bin/Debug/net8.0/Question 3.pdb
+/home/yukitty/Documents/UNI/ITDCA_FA/ITDCA-Formative/Question 3/obj/Debug/net8.0/Question 3.dll
+/home/yukitty/Documents/UNI/ITDCA_FA/ITDCA-Formative/Question 3/obj/Debug/net8.0/refint/Question 3.dll
+/home/yukitty/Documents/UNI/ITDCA_FA/ITDCA-Formative/Question 3/obj/Debug/net8.0/Question 3.pdb
+/home/yukitty/Documents/UNI/ITDCA_FA/ITDCA-Formative/Question 3/obj/Debug/net8.0/Question 3.genruntimeconfig.cache
+/home/yukitty/Documents/UNI/ITDCA_FA/ITDCA-Formative/Question 3/obj/Debug/net8.0/ref/Question 3.dll

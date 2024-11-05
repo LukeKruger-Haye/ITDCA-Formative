@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "2J3+w0QlLVvE43a21VZ1vhsvq60f9awHo29szjgujOC673CbNpYOIXO41IuYHekeAOFj8WPwHcVRiOrgrApa5w==",
+  "success": true,
+  "projectFilePath": "/home/yukitty/Documents/UNI/ITDCA_FA/ITDCA-Formative/Question 3/Question 3.csproj",
+  "expectedPackageFiles": [
+    "/home/yukitty/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.8/microsoft.aspnetcore.app.ref.8.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}
