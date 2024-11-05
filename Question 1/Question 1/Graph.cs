@@ -153,7 +153,21 @@ namespace Graphs
             Node root = nodes.Values.First();
 
             Console.WriteLine("Graph with DFS");
+            //print_bleh();
             dfs(root, visited);
+        }
+
+        public void print_bleh()
+        {
+            foreach (Node node in nodes.Values)
+            {
+                Console.WriteLine($"Node {node.value}");
+
+                foreach (var connection in  node.get_connections())
+                {
+                    Console.WriteLine($"  has edge to node {connection.Key.value} with weight {connection.Value.weight}");
+                }
+            }
         }
 
         public void dfs(Node root, HashSet<Node> visited)
@@ -161,16 +175,13 @@ namespace Graphs
             visited.Add(root);
             Console.WriteLine($"\nNode: {root.value}");
 
-            foreach (var pair in root.get_connections().OrderBy(x => x.Key.value))
+            foreach (var connection in root.get_connections())
             {
-                Node connection = pair.Key;
-                Edge edge = pair.Value;
+                Console.WriteLine($"  Edge to Node {connection.Key.value} with weight: {connection.Value.weight}");
 
-                Console.WriteLine($"  Edge to Node {connection.value} with weight: {edge.weight}");
-
-                if (!visited.Contains(connection))
+                if (!visited.Contains(connection.Key))
                 {
-                    dfs(connection, visited);
+                    dfs(connection.Key, visited);
                 }
             }
         }
