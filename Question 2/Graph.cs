@@ -196,6 +196,7 @@ namespace Graphs
             dfs(root, visited);
         }
 
+        //Question 2 onwards
         public void dfs(Node root, HashSet<Node> visited)
         {
             visited.Add(root);
