@@ -15,7 +15,7 @@ namespace Question3
             HashSet<Edge> result = kruskal.mst();
             timer.Stop();
 
-            Console.WriteLine($"Time to run Kurskal's Aglorithm: {timer.Elapsed.TotalMilliseconds}ms");
+            Console.WriteLine($"Time to run Kruskal's Aglorithm: {timer.Elapsed.TotalMilliseconds}ms");
 
             /*
             Console.WriteLine("Edges of the MST: \n");
