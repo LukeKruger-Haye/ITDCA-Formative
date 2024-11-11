@@ -12,30 +12,21 @@ namespace Question3
 
             var timer = System.Diagnostics.Stopwatch.StartNew();
 
-            kruskal.mst();
+            HashSet<Edge> result = kruskal.mst();
             timer.Stop();
 
-            System.Console.WriteLine($"Time to run Kurskal's Aglorithm: {timer.Elapsed.TotalMilliseconds}ms");
+            Console.WriteLine($"Time to run Kurskal's Aglorithm: {timer.Elapsed.TotalMilliseconds}ms");
 
             /*
-            double[] times = new double[10];
+            Console.WriteLine("Edges of the MST: \n");
 
-            for (int i = 0; i < 10; i++) 
+            foreach (Edge edge in result)
             {
-                var timer = System.Diagnostics.Stopwatch.StartNew();
+                Console.WriteLine($"{edge.node_1.value} -> {edge.node_2.value} with weight {edge.weight}");
 
-                kruskal.mst();
-
-                timer.Stop();
-                times[i] = timer.Elapsed.TotalMilliseconds;
             }
 
-            System.Console.WriteLine("Test results:\n");
-
-            for (int i = 0; i < 10; i++) 
-            {
-                System.Console.WriteLine($"Time for test {i}: {times[i]}ms");
-            }
+            Console.WriteLine($"\nMinimum cost for the MST: {result.Sum(edge => edge.weight)}");
             */
         }
     }
