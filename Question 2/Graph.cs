@@ -181,7 +181,6 @@ namespace Graphs
             return nodes[value];
         }
         
-        //Question 2 onwards
         public void print_dfs()
         {
             if (nodes.Count == 0)
