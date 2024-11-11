@@ -180,7 +180,8 @@ namespace Graphs
 
             return nodes[value];
         }
-
+        
+        //Question 2 onwards
         public void print_dfs()
         {
             if (nodes.Count == 0)
@@ -196,7 +197,6 @@ namespace Graphs
             dfs(root, visited);
         }
 
-        //Question 2 onwards
         public void dfs(Node root, HashSet<Node> visited)
         {
             visited.Add(root);
