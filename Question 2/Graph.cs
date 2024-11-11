@@ -193,21 +193,7 @@ namespace Graphs
             Node root = nodes.Values.First();
 
             Console.WriteLine("Graph with DFS");
-            //print_bleh();
             dfs(root, visited);
-        }
-
-        public void print_bleh()
-        {
-            foreach (Node node in nodes.Values)
-            {
-                Console.WriteLine($"Node {node.value}");
-
-                foreach (var connection in  node.get_connections())
-                {
-                    Console.WriteLine($"  has edge to node {connection.Key.value} with weight {connection.Value.weight}");
-                }
-            }
         }
 
         public void dfs(Node root, HashSet<Node> visited)
@@ -222,6 +208,45 @@ namespace Graphs
                 if (!visited.Contains(connection.Key))
                 {
                     dfs(connection.Key, visited);
+                }
+            }
+        }
+
+        public void print_bfs()
+        {
+            if (nodes.Count == 0)
+            {
+                Console.WriteLine("Error! Graph has no nodes!");
+                return;
+            }
+
+            HashSet<Node> visited = new HashSet<Node>();
+            Queue<Node> node_queue = new Queue<Node>();
+            Node root = nodes.Values.First();
+
+            Console.WriteLine("Graph with BFS");
+            bfs(root, visited, node_queue);
+        }
+
+        public void bfs(Node root, HashSet<Node> visited, Queue<Node> node_queue)
+        {
+            visited.Add(root);
+            node_queue.Enqueue(root);
+
+            while (node_queue.Count > 0)
+            {
+                root = node_queue.Dequeue();
+                Console.WriteLine($"\nNode: {root.value}");
+
+                foreach (var connection in root.get_connections())
+                {
+                    Console.WriteLine($"  Edge to Node {connection.Key.value} with weight: {connection.Value.weight}");
+
+                    if (!visited.Contains(connection.Key))
+                    {
+                        visited.Add(connection.Key);
+                        node_queue.Enqueue(connection.Key);
+                    }
                 }
             }
         }

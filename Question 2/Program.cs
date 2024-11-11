@@ -9,6 +9,7 @@ namespace Question2
             Graph graph = new Graph("graph.txt");
 
             graph.print_dfs();
+            graph.print_bfs();
         }
     }
 }
